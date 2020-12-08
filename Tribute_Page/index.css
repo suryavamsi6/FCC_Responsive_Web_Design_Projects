@@ -1,0 +1,46 @@
+#main {
+    font-family: alegreya sans;
+    font-size: large;
+}
+
+#title {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: lato;
+    font-size: 50px;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#olist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+}
+
+li {
+    padding-bottom: 20px;
+}
