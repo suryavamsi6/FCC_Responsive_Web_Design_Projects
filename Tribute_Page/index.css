@@ -5,9 +5,11 @@
 
 #title {
     padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: RGB(238, 238, 238);
 }
 
 h1 {
@@ -32,6 +34,11 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: RGB(238, 238, 238);
+}
+
+h3 {
+    padding-top: 50px;
 }
 
 #olist {
@@ -43,4 +50,20 @@ img {
 
 li {
     padding-bottom: 20px;
+}
+
+#quote {
+    width: 45%;
+    padding-bottom: 50px;
+    font-style: italic;
+}
+
+#link {
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#tribute-link {
+    align-self: flex-start;
 }
