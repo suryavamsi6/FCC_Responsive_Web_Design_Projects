@@ -6,34 +6,50 @@
 </head>
 
 <body>
-    <h1 id="title">User Survey Form</h1>
-    <p id="description">Thank you for taking time to fill the survey</p>
+    <div id="wrapper">
+        <h1 id="title">User Survey Form</h1>
+        <p id="description">Thank you for taking time to fill the survey</p>
+    </div>
     <form id="survey-form">
-        <label for="name" id="name-label">
-            Name: 
-            <input id="name" placeholder="Enter your name" type="text" required>
-        </label>
-        <label for="email" id="email-label">
-            Email: 
-            <input id="email" placeholder="Enter your email" type="email" required>
-        </label>
-        <label for="number" id="number-label">
-            Age: 
-            <input id="number" min="10" max="99" placeholder="Enter your age" type="number">
-        </label>
-        <select id="dropdown">
+        <div class="form-group">
+            <label for="name" id="name-label">
+                Name:    
+            </label>
+            <input class="form-control" id="name" placeholder="Enter your name" type="text" required/>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">
+                Email:  
+            </label>
+            <input class="form-control" id="email" placeholder="Enter your email" type="email" required/>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">
+                Age:&ensp;&ensp;
+            </label>
+            <input class="form-control" id="number" placeholder="Enter your age" min="10" max="99" type="number">
+        </div>
+        <div class="form-group">
+            <select id="dropdown">
             <option disabled selected value>Select from the options</option>
             <option value="vscode">VSCode</option>
             <option value="atom">Atom</option>
             <object value="notepad">NotePad</object>
-        </select>
-        <input type="radio" value="0-2" name="experience">
-        <input type="radio" value="2-5" name="experience">
-        <input type="radio" value="5+" name="experience">
-        <input type="checkbox" value="C++" name="languages">
-        <input type="checkbox" value="Python" name="languages">
-        <input type="checkbox" value="Java" name="languages">
-        <textarea></textarea>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="radio" value="0-2" name="experience">
+            <input type="radio" value="2-5" name="experience">
+            <input type="radio" value="5+" name="experience">
+        </div>
+        <div class="form-group">
+            <input type="checkbox" value="C++" name="languages">
+            <input type="checkbox" value="Python" name="languages">
+            <input type="checkbox" value="Java" name="languages">
+        </div>
+        <div class="form-group">
+            <textarea></textarea>
+        </div>
         <button id="submit" type="submit">Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

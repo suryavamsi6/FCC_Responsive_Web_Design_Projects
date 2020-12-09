@@ -1,0 +1,33 @@
+    #wrapper {
+        display: grid;
+        grid-template-rows: 3fr 3fr;
+        grid-template-columns: 100%;
+    }
+    
+    #title {
+        justify-self: center;
+        grid-column: 1;
+    }
+    
+    #description {
+        grid-column: 1;
+        justify-self: center;
+    }
+    
+    #survey-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: center;
+        padding-top: 1em;
+    }
+    
+    .form-control {
+        width: inherit
+    }
