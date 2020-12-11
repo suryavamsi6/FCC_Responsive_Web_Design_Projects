@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+#navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+    list-style: none;
+    margin-left: 0px;
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 0px;
+}
+
+#navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+body {
+    font-family: lato;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+header {
+    font-weight: thin;
+}
+
+h2 {
+    margin-top: 30px
+}
+
+p {
+    margin: 20px 20px 20px 20px;
+}
+
+ul {
+    margin: 20px 20px 20px 50px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+code {
+    display: block;
+    white-space: pre-line;
+    margin-left: 20px;
+    background-color: #f7f7f7;
+    padding: 20px 0px 20px 30px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
